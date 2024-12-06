@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height:57.8em;
+    background-image: url(../imagens/fundologin.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "IM Fell Double Pica", serif;
+}
+div{
+    margin-top: 5em;
+    float: right;
+    margin-right: 10em;
+    background-color: #929292;
+    border-radius: 15px;
+    width: 30em;
+    text-align: center; 
+    padding-bottom: 2em;
+}
+img{
+    padding-top: 2em;
+}
+input{
+    height: 3em;
+    width: 19em;
+    border-radius: 15px;
+    border: none;
+    background-color: #d9d9d9;
+    padding: 0 0.5em;
+    font-size: 20px;
+}
+
+label{
+    text-align: left;
+    display: block;
+    padding: 1em 2.2em;
+    font-size: 20px;
+}
+input[type = 'submit']{
+    margin: 3em auto;
+    display: inline-block;
+    background-color: #440505;
+    color: #d8d8d8;
+    font-family: "Metal Mania", system-ui;
+    
+}
+
+div hr {
+    border: 1px solid #440505;
+    margin: 2em 3em;
+}
+@media screen and (max-width: 600px){
+    body{
+        height:54.8em;
+        background-image: url(../imagens/fundologinresponsivo.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    div {
+        float: none;
+        width: 22em;
+        margin: 3em auto;
+    }
+    input {
+        width: 13em;
+    }
+}

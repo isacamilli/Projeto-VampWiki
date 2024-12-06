@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:"IM Fell Double Pica", serif; 
+}
+.box{
+    box-sizing: border-box;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    width: 25em;
+    height: 13.5em;
+    background-color: #830000;
+}
+#fecharmodal {
+    position: absolute;
+    top: -1em;
+    right: -1em;
+    background: #3d0505;
+    color: #d8d8d8;
+    border: none;
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+video{
+    width: 100%;
+}
+#carouselExampleSlidesOnly{
+    display: none;
+}
+div.principal{
+    max-width: 50em;
+    margin: 0 auto;
+}
+h2{
+    font-size: 35px;
+    padding: 1em 0;
+}
+div.textoprincipal{
+    display: flex;
+}
+section p{
+    font-size: 20px;
+    width: 30em;
+}
+figure{
+    padding-left: 2em;
+}
+section.principal1{
+    padding-bottom: 2em;
+    border-bottom: 2px solid #830000;
+}
+ol.vampiros{
+    padding: 2em 0;
+    display: flex;
+    gap: 3.5em;
+    list-style-type: none;
+}
+footer{
+    background-color: #830000;
+    padding: 2.5em;
+}
+footer p{
+    font-size: 21px;
+    color: #d9d9d9;
+    text-align: center;
+}
+@media screen and (max-width: 600px){
+    ol.vampiros{
+        display: none;
+    }
+    #carouselExampleSlidesOnly{
+        display: block;
+        margin: 0 auto;
+        width: 15em;
+    }
+    h2{
+        font-size: 45px ;
+        padding-left: 1em;
+        margin: 0;
+    }
+    section p{
+        font-size: 32px;
+        max-width: 84%;
+        border-bottom: 2px solid #830000;
+        margin: 0 auto;
+        padding-bottom:1em;
+    }
+    div.textoprincipal{
+        display:block;
+    }
+    figure{
+        display: none;
+    }
+    section.principal1{
+        padding-bottom: 2em;
+        border-bottom: none;
+    }
+    div.box{
+        display: none;
+    }
+    footer{
+        max-width: 50em;
+        margin-top: 3em;
+        padding: 1em;
+    }
+    footer p{
+        font-size: 17px;
+    }
+}

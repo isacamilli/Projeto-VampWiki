@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../imagens/background.png);
+    background-size: 100% 1000%;
+    background-repeat: no-repeat;
+    font-family:"IM Fell Double Pica", serif; 
+    padding-left: 0;
+}
+main{
+    background-image: url(../imagens/morcegos.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+header nav.navbar{
+    display: none;
+}
+div.header {
+    background-color: #830000;
+    padding: 1.5em ;
+    display: flex;
+}
+
+nav {
+    margin-left: auto;
+    display: flex;
+}
+
+nav a{
+    color: #d9d9d9;
+    text-decoration: none;
+}
+nav ol{
+    margin-bottom: 0;
+}
+
+nav li {
+    padding: 1em;
+    display: inline-block;
+    font-size: 25px; 
+}
+
+#login {
+    background-color: #3d0505;
+    padding: 0.5em 1.5em;
+    border-radius: 5%;
+    font-family: "Metal Mania", system-ui;
+}
+
+div.pesquisa {
+    margin: auto 2em;
+}
+#barra {
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 2.7em;
+    max-width: 17em;
+    background-color: #d8d8d8;
+    padding: 0 0.5em;
+}
+
+input {
+    vertical-align: middle;
+    margin-left: 0.5em;
+}
+@media screen and (max-width: 1225px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .fixed-top {
+        position: relative;
+        width: 100%;
+    }
+    header nav.navbar{
+        display: flex;
+        padding: 1.5em;
+        max-width: 100%;
+    }
+    header div.header, div.header nav, div.header link{
+        display: none;
+    }
+    
+    div.offcanvas-header{
+        padding: 2em 2em 0;
+    }
+
+    .bg-dark{
+        background-color: #830000 !important;
+    }
+    .text-bg-dark{
+        background-color: #830000 !important;
+    }
+    .nav-link{
+        color: #d9d9d9;
+    }
+
+    input.form-control.me-2{
+        margin-left: 1.4em;
+    }
+
+    .btn-success{
+        --bs-btn-bg: #830000;
+        --bs-btn-border-color: #830000;
+        --bs-btn-hover-bg: #830000;
+        --bs-btn-hover-border-color: #830000;
+        --bs-btn-active-bg: #830000;
+        --bs-btn-active-border-color: #830000;
+        --bs-btn-disabled-bg: #830000;
+        --bs-btn-disabled-border-color: #830000;
+    }
+    .offcanvas-backdrop {
+        height: 100%;
+    }
+}
+@media screen and (max-width: 800px){    
+    body{
+        background-size: 100% 1000%;
+    }
+    main{
+        background-image: none;
+    }
+    .fixed-top {
+        width: 50em;
+    }
+}

@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:"IM Fell Double Pica", serif; 
+}
+
+main {
+    padding-bottom: 3em;
+}
+
+div.main{
+    max-width: 50em;
+    margin: 0 auto;
+}
+h2{
+    font-size: 35px;
+    padding-top: 1em;
+}
+h3{
+    font-size: 30px;
+    padding-top: 1em;
+}
+div.secao{
+    display: flex;
+    height: 23em;
+    margin-top: 3em;
+}
+section{ 
+    padding-left: 2em;
+}
+div.texto {
+    height: 19.8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+h4{
+    font-size: 30px;
+    padding-bottom: 0.3em;
+}
+section p{
+    font-size: 18px;
+}
+section input{
+    color: #d9d9d9;
+    background-color: #830000;
+    width: 8em;
+    height: 3em;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 10px;
+}
+footer{
+    background-color: #830000;
+    padding: 2.5em;
+}
+footer p{
+    font-size: 21px;
+    color: #d9d9d9;
+    text-align: center;
+}
+@media screen and (max-width: 787px){
+    h2{
+        font-size: 35px ;
+        text-align: center;
+        margin: 0;
+    }
+    .ordenador{
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    h3{
+        margin-top: 1em;
+        padding-top: 0;
+        font-size: 28px;
+    }
+    .secao {
+        flex-direction: column;
+        max-width: 20em;
+        margin: 0 auto;
+        padding: 0;
+    }
+    section {
+        height: 5em;
+        display: flex;
+        padding: 1em 0;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    section h4{
+        font-size: 23px;
+    }
+    div.texto {
+        height: 0;
+    }
+    .texto p {
+        display: none;
+    }
+    footer{
+        width:100%;
+        margin-top: 1em;
+        padding: 1em;
+    }
+    footer p{
+        font-size: 17px;
+    }
+}

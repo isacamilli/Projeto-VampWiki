@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:"IM Fell Double Pica", serif; 
+}
+
+div.main{
+    max-width: 50em;
+    margin: 0 auto;
+}
+
+h2{
+    font-size: 35px;
+    padding: 1em 0;
+}
+
+div p {
+    font-size: 20px;
+    padding-bottom: 2em;
+    border-bottom: 2px solid #830000;
+}
+
+p img {
+    float: right;
+    width: 30%;
+    margin: 0.5em;
+}
+
+div.carousel {
+    margin: 2em auto;
+    max-width: 35em;
+}
+
+.carousel img {
+    max-height: 20em;
+}
+
+footer{
+    background-color: #830000;
+    padding: 2.5em;
+}
+footer p{
+    font-size: 21px;
+    color: #d9d9d9;
+    text-align: center;
+}
+@media screen and (max-width: 1280px){
+    h2{
+        font-size: 35px ;
+        text-align: center;
+        margin: 0;
+    }
+    div p{
+        padding: 0 32px;
+    }
+}
+@media screen and (max-width: 800px){
+    div p img{
+        display: none;
+    }
+    div p{
+        padding: 0 12px;
+        font-size: 32px;
+        max-width: 84%;
+        margin: 0 auto;
+        padding-bottom:1em;
+    }
+}
+@media screen and (max-width: 600px){
+    footer{
+        width: 100%;
+        padding: 1em;
+    }
+    footer p{
+        font-size: 20px;
+    }
+}
